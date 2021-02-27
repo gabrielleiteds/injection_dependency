@@ -1,0 +1,9 @@
+{
+  "dialect": "sqlite",
+  "storage": "src/database/dev.sqlite",
+  "database": "development",
+  "define": {
+    "timestamps": true,
+    "underscored": true
+  }
+}
