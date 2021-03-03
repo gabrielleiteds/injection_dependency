@@ -1,1 +1,1 @@
-module.exports = require(`./${process.env.DATABASE}.json`)
+module.exports = require(`./${process.env.DATABASE}.json`);

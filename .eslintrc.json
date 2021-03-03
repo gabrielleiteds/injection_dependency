@@ -1,16 +1,17 @@
 {
     "env": {
+        "commonjs": true,
         "es2021": true,
-        "node": true,
-        "jest": true
+        "node": true
     },
     "extends": [
-        "standard"
+        "airbnb-base"
     ],
     "parserOptions": {
-        "ecmaVersion": 12,
-        "sourceType": "module"
+        "ecmaVersion": 12
     },
     "rules": {
+         "eslint-disable-next-line linebreak-style": false,
+         "eslint-disable-next-line import/no-dynamic-require": false
     }
 }
