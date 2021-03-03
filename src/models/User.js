@@ -1,10 +1,12 @@
 const uuid = require('uuid');
 const bcrypt = require('bcryptjs');
-const { DataTypes } = require('sequelize');
+const { DataTypes, Model } = require('sequelize');
 
 const sequelize = require('../database/connection');
 
-const User = sequelize.define('User', {
+class User extends Model {}
+
+User.init({
   name: {
     type: DataTypes.STRING,
     allowNull: false,
