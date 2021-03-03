@@ -11,7 +11,7 @@
         "ecmaVersion": 12
     },
     "rules": {
-         "eslint-disable-next-line linebreak-style": false,
-         "eslint-disable-next-line import/no-dynamic-require": false
+        "linebreak-style": 0,
+        "import/no-dynamic-require": 0  
     }
 }
