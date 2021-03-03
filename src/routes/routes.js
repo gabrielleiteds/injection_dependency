@@ -1,5 +1,9 @@
-import { Router } from 'express'
+const { Router } = require('express')
 
 const routes = Router()
 
-export default routes
+routes.get('/', (req, res) => {
+  res.json({ statusCode: '200' })
+})
+
+module.exports = routes

@@ -1,6 +1,6 @@
-import { Sequelize } from 'sequelize'
+const { Sequelize } = require('sequelize')
 
-import config from '../config/database'
+const config = require('../config/database')
 
 const connection = new Sequelize(config)
 
@@ -11,4 +11,4 @@ try {
   console.error('falha: ', error)
 }
 
-export default connection
+module.exports = connection

@@ -1,7 +1,10 @@
-import bodyParser from 'body-parser'
-import express from 'express'
-import routes from './routes/routes'
+const bodyParser = require('body-parser')
+const express = require('express')
+
+const routes = require('./routes/routes')
+
 class App {
+  #Express
   constructor (Express = express()) {
     this.Express = Express
 
@@ -22,8 +25,8 @@ class App {
   }
 
   async database () {
-    import('./database/connection')
+    require('./database/connection')
   }
 }
 
-export default new App().Express
+module.exports = new App().Express
