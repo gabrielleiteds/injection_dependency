@@ -5,7 +5,14 @@ class UserService {
     this.userRepository = new UserRepository();
   }
 
-  async createUser(name, email, password, photo) {
+  async createUser(user) {
+    const {
+      name,
+      email,
+      password,
+      photo,
+    } = user;
+
     const userAlreadyExists = await this.userRepository.getUser(email);
 
     if (userAlreadyExists) {
@@ -15,14 +22,14 @@ class UserService {
       });
     }
 
-    const user = await this.userRepository.create({
+    const createdUser = await this.userRepository.create({
       name,
       email,
       password,
       photo,
     });
 
-    return user;
+    return createdUser;
   }
 }
 
