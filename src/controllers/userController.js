@@ -1,4 +1,3 @@
-const { request, response } = require('express');
 const UserService = require('../modules/users/services/userService');
 
 module.exports = {
