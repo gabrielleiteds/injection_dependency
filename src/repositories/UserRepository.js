@@ -1,16 +1,17 @@
 const UserModel = require('../models/User');
 
 class UserRepository {
+  #model
   constructor() {
-    this.model = UserModel;
+    this.#model = UserModel;
   }
 
   async create(user) {
-    return this.model.create(user);
+    return this.#model.create(user);
   }
 
   async getUser(email) {
-    const checkUser = await this.model.findOne({
+    const checkUser = await this.#model.findOne({
       where: {
         email,
       },
@@ -20,7 +21,7 @@ class UserRepository {
   }
 
   async update(fields) {
-    return this.model.update(fields, {
+    return this.#model.update(fields, {
       where: {
         id: fields.id,
       },
@@ -28,7 +29,7 @@ class UserRepository {
   }
 
   async delete(userId) {
-    return this.model.destroy({
+    return this.#model.destroy({
       where: {
         id: userId,
       },
@@ -36,4 +37,4 @@ class UserRepository {
   }
 }
 
-module.exports = new UserRepository();
+module.exports = UserRepository;
