@@ -1,6 +1,6 @@
-const UserRepository = require('../repositories/UserRepository');
+const UserRepository = require('../../../repositories/UserRepository');
 
-const generateToken = require('../utils/generateToken')
+const generateToken = require('../../../utils/generateToken')
 
 class AuthService {
   #userRepository
