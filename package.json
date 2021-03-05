@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "env DATABASE=test sequelize db:migrate",
-    "test": "env DATABASE=test jest --watch",
+    "test": "env DATABASE=test jest",
     "posttest": "env DATABASE=test sequelize db:migrate:undo:all",
     "dev": "env DATABASE=development nodemon src/index.js"
   },
