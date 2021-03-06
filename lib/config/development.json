@@ -1,6 +1,6 @@
 {
   "dialect": "sqlite",
-  "storage": "src/database/dev.sqlite",
+  "storage": "lib/infrastructure/database/dev.sqlite",
   "database": "development",
   "define": {
     "timestamps": true,
