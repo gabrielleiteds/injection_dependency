@@ -6,7 +6,6 @@ const connection = new Sequelize(config);
 
 try {
   connection.authenticate();
-  console.log('conectado!');
 } catch (error) {
   console.error('falha: ', error);
 }
