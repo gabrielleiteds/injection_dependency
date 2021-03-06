@@ -7,7 +7,7 @@
     "pretest": "env DATABASE=test sequelize db:migrate",
     "test": "env DATABASE=test jest",
     "posttest": "env DATABASE=test sequelize db:migrate:undo:all",
-    "dev": "env DATABASE=development nodemon src/index.js"
+    "dev": "env DATABASE=development nodemon lib/index.js"
   },
   "keywords": [],
   "author": "",
