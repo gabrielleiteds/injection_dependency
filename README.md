@@ -1,5 +1,5 @@
 ## injection_dependency
-Aplicação de vendas de livros, aplicando o conhecimento de Clean Architeture, SOLID, DDD, Testes automatizados, injeção de dependências.
+Aplicação de Cadastro e login, aplicando o conhecimento de Clean Architeture, SOLID, DDD, Testes automatizados, injeção de dependências.
 
 ## Technologies 
 - NodeJS
